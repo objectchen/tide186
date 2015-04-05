@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>有奖转发</title>
+		<link rel="stylesheet" type="text/css" href="/manager/common/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="/manager/common/css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="/manager/common/css/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="/manager/css/activity.css" />
+		<script type="text/javascript" src="/manager/common/js/jquery-1.8.3.js"></script>
+		
+		<style type="text/css">
+		.layer{width:600px;height:400px;margin:-200px 0 0 -300px;}
+		</style>	
+	</head>
+	<body>
+		<div class="head">
+			<div class="headIn clearfix">
+				<h1>趣应用</h1>
+				<ul class="nav clearfix">
+					<li><a href="#">我的QAPP</a></li>
+					<li><a href="#">预约表单</a></li>
+					<li class="cur"><a href="#">活动推广</a></li>
+				</ul>
+				<span class="user">欢迎您！<i>运通嘉奥 </i><a href="#">退出</a></span>
+			</div>
+		</div>
+		<div class="guid">
+			<div class="guidIn">
+				<span class="breadCrumbs">
+					<i class="homeIcon"></i><span>> <a href="#">活动推广</a> > <a href="#">模板选择</a> > 活动设置</span>
+				</span>
+			</div>
+		</div>
+		<div class="content clearfix">
+			<!--左展示区域开始-->
+			<div class="Exhibition">
+				<div class="bg">
+						<img id="mpic" src="/img/edit.jpg" width="340px" height="600px" >
+				</div>
+			</div>
+
+			<!--左展示区域结束-->
+			<!--右编辑区域开始-->
+			<div class="Right">			
+				<div class="EditArea">
+					<p class="topTip">注：您必须在此活动中添加用户兑奖方式</p>
+					<table cellpadding="0" cellspacing="0"border="0">
+						<tr>
+							<th><i class="PromptR">*</i>活动名称：</th>
+							<td><input type="text" class="input110"/><i class="PromptG">最多输入10个字符</i></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th class="top"><i class="PromptR">*</i>背景图片：</th>
+							<td colspan="2">
+								<dl class="upload">
+									<dt class="pic"><img   src="/manager/img/uploadPic.png"/></dt>
+									<dd class="tips">
+										<p class="uploadTip">注：可将活动说明与背景一同设计上传也可在<br />下方“活动说明”进行编辑 。</p>
+										<button style="width: 67px;">上传</button>
+									</dd>
+								</dl>
+							</td>
+						</tr>
+						<tr>
+							<th></th>
+							<td colspan="2"><span>最佳图片尺寸：640*1008像素  格式：jpg/png   大小不超过300K</span></td>
+						</tr>
+						<tr>
+							<th class="desTitle"><i class="PromptR">*</i>转发奖励说明：</th>
+							<td colspan="2">
+								<ul class="desSetting">
+									<li>转发
+										<label>
+											<input type="text" class="input60"/>
+										</label> （含）可兑换
+										<label>
+											<input type="text" class="input110"/>
+										</label>
+									</li>
+									<li>转发
+										<label>
+											<input type="text" class="input60"/>
+										</label> （含）可兑换
+										<label>
+											<input type="text" class="input110"/>
+										</label>
+									</li>
+									<li>转发
+										<label>
+											<input type="text" class="input60"/>
+										</label> （含）可兑换
+										<label>
+											<input type="text" class="input110"/>
+										</label>
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th class="top">活动说明：</th>
+							<td><textarea class="desConRight" placeholder="活动时间、内容、奖品兑奖方式联系方式等" maxlength="150"></textarea></td>
+							<td class="bottom" style="position: relative;">
+								<div id="customWidget">
+									<div id="colorSelector2"><div style="background-color: rgb(107, 255, 107);"></div></div>
+	                				<div id="colorpickerHolder2" style="height: 0px; overflow: hidden;">
+	                				<div class="colorpicker" id="collorpicker_666" style="display: block; position: absolute;"><div class="colorpicker_color" style="background-color: rgb(0, 255, 0);"><div><div style="left: 150px; top: 138px;"></div></div></div><div class="colorpicker_hue"><div style="top: 100px;"></div></div><div class="colorpicker_new_color" style="background-color: rgb(0, 20, 0);"></div><div class="colorpicker_current_color" style="background-color: rgb(107, 255, 107);"></div><div class="colorpicker_hex"><input type="text" maxlength="6" size="6"></div><div class="colorpicker_rgb_r colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_rgb_g colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_rgb_b colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_hsb_h colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_hsb_s colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_hsb_b colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_submit"></div></div></div>
+								</div>
+								<i class="PromptG">最多输入150个字符</i>
+							</td>
+						</tr>
+						<tr>
+							<th class="top">规则说明：</th>
+							<td colspan="2">
+								<p class="ruleDes">每转发一人，并且所转发的对象打开内容后，视为1次计算，以此类推。不可重复转发或分享至同一对象多次，否则视为1次计算。同一页面，同一用户只记录首次打开的来源用户</p>
+							</td>
+						</tr>
+					</table>
+					<ul class="tabTitle">
+						<li class="left on">按钮一</li>
+						<li>按钮二</li>
+					</ul>
+					<ul class="tabCon">
+						<li>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<th>图片按钮：</th>
+									<td class="upload">
+										<button style="width: 67px;">上传</button><i>最佳图片尺寸：180*60像素   格式：jpg/png</i>
+									</td>
+								</tr>
+								<tr class="btnFunction">
+									<th>按钮功能：</th>
+									<td>
+										<select class="sel100 btnFun">
+											<option value="" selected="selected">一键呼叫</option>
+											<option value="">链接地址</option>
+											<option value="">预约表单</option>
+										</select>
+									</td>
+								</tr>
+								<tr class="tel">
+									<th class="top">电话号码：</th>
+									<td>
+										<div class="funAdd">
+							                <input type="text" value="" class="input200" />
+							                <div class="mm-actTip">（例如：010-88889999；400-888-4592；13955689451）</div>
+							            </div>
+									</td>
+								</tr>
+								<tr class="address" style="display: none;">
+									<th>链接地址：</th>
+									<td>
+										<div class="funAdd">
+							                <input type="text" class="input200" value="http://">
+							            </div>
+									</td>
+								</tr>
+								<tr class="form" style="display: none;">
+									<td colspan="2">
+										<div class="dateForm">
+											<div class="dateFormBox dateFormBox1">
+												<div class="dateFormList1 clearfix">								
+													<dl class="codeForm cur">
+														<dt>爱妈妈抱 </dt>
+														<dd><span class="scode"><img src="../../../static/QAPP3.0/manager/img/scode.jpg"></span></dd>
+														<dd class="codeId">33301301</dd>
+														<dd><a>复制链接</a></dd>
+														<dd  class="curIcon2"><i></i></dd>
+													</dl>
+													<dl class="codeForm">
+														<dt>爱妈妈抱 </dt>
+														<dd><span class="scode"><img src="../../../static/QAPP3.0/manager/img/scode.jpg"></span></dd>
+														<dd class="codeId">33301301</dd>
+														<dd><a>复制链接</a></dd>
+														<dd  class="curIcon2"><i></i></dd>
+													</dl>
+													<dl class="codeForm">
+														<dt>爱妈妈抱 </dt>
+														<dd><span class="scode"><img src="../../../static/QAPP3.0/manager/img/scode.jpg"></span></dd>
+														<dd class="codeId">33301301</dd>
+														<dd><a>复制链接</a></dd>
+														<dd  class="curIcon2"><i></i></dd>
+													</dl>
+													<dl class="codeForm">
+														<dt>爱妈妈抱 </dt>
+														<dd><span class="scode"><img src="../../../static/QAPP3.0/manager/img/scode.jpg"></span></dd>
+														<dd class="codeId">33301301</dd>
+														<dd><a>复制链接</a></dd>
+														<dd  class="curIcon2"><i></i></dd>
+													</dl>
+												</div>
+											</div>
+											<span class="formLeft"></span>
+											<span class="formRight"></span>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</li>
+						<li style="display: none;">
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<th>图片按钮：</th>
+									<td class="upload">
+										<button style="width: 67px;">上传</button><i>最佳图片尺寸：180*60像素   格式：jpg/png *60px</i>
+									</td>
+								</tr>
+								<tr class="btnFunction">
+									<th>按钮功能：</th>
+									<td>
+										<select class="sel100 btnFun">
+											<option value="" selected="selected">一键呼叫</option>
+											<option value="">链接地址</option>
+											<option value="">预约表单</option>
+										</select>
+									</td>
+								</tr>
+								<tr class="tel">
+									<th class="top">电话号码：</th>
+									<td>
+										<div class="funAdd">
+							                <input type="text" value="" class="input200" />
+							                <div class="mm-actTip">（例如：010-88889999；400-888-4592；13955689451）</div>
+							            </div>
+									</td>
+								</tr>
+								<tr class="address" style="display: none;">
+									<th>链接地址：</th>
+									<td>
+										<div class="funAdd">
+							                <input type="text" class="input200" value="http://">
+							            </div>
+									</td>
+								</tr>
+								<tr class="form" style="display: none;">
+									<td colspan="2">
+										<div class="dateForm">
+											<div class="dateFormBox dateFormBox2">
+												<div class="dateFormList2 clearfix">								
+													<dl class="codeForm cur">
+														<dt>爱妈妈抱 </dt>
+														<dd><span class="scode"><img src="../../../static/QAPP3.0/manager/img/scode.jpg"></span></dd>
+														<dd class="codeId">33301301</dd>
+														<dd><a>复制链接</a></dd>
+														<dd  class="curIcon2"><i></i></dd>
+													</dl>
+												</div>
+											</div>
+											<span class="formLeft"></span>
+											<span class="formRight"></span>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</li>
+					</ul>
+					<div class="saveBtn">
+						<button>保 存</button>
+					</div>
+				</div>
+			</div>
+			<!--右编辑区域结束-->
+			<div class="clear"></div>
+		</div>
+		<!--弹框start-->
+		<div class="layer layerSave">
+			<div id="altContent"></div>
+		</div>
+		
+		<!--弹框end-->
+		<div class="footer">
+			<p>感谢在这里付出的TA<a>下载Chrome</a>下载Chrome (平台各项功能已通过Chrome浏览器测试)<i>版本号：v3.0</i></p>
+		</div>
+		
+		<!--弹出框-->
+		<script type="text/javascript" src="/manager/common/js/colorpicker/js/colorpicker.js"></script>
+		<script type="text/javascript" src="/manager/common/js/colorpicker/js/eye.js"></script>
+		<script type="text/javascript" src="/manager/common/js/colorpicker/js/utils.js"></script>
+		<script type="text/javascript" src="/manager/common/js/colorpicker/js/layout.js"></script>
+		<link rel="stylesheet" href="/manager/common/js/colorpicker/css/colorpicker.css" type="text/css">
+		<link rel="stylesheet" href="/manager/common/js/colorpicker/css/layout.css" type="text/css">
+		<script type="text/javascript" src="/manager/common/js/common.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				scan($('.dateFormList1 dl'),$('.dateFormBox1'),$('.dateFormList1'));
+				$(".tabTitle li").click(function(){
+					var index=$(this).index();
+					$(this).addClass("on").siblings().removeClass("on");
+					if(index==0){
+						$(this).css('border-bottom','1px solid #fff')
+						$(this).next().css('border-bottom','1px solid #44c7db');
+						$('.tabCon').find('li').eq(0).show().addClass('fadeInUp').siblings().hide().removeClass('fadeInUp');
+						scan($('.dateFormList1 dl'),$('.dateFormBox1'),$('.dateFormList1'));
+					}
+					else{
+						$(this).css('border-bottom','1px solid #fff')
+						$(this).prev().css('border-bottom','1px solid #44c7db');
+						$('.tabCon').find('li').eq(1).show().addClass('fadeInUp').siblings().hide().removeClass('fadeInUp');
+						scan($('.dateFormList2 dl'),$('.dateFormBox2'),$('.dateFormList2'))
+					}
+				})
+				$('.btnFun').each(function(){
+					$(this).change(function(){
+						var i=$(this).find('option:selected').index();
+						if(i==0){
+							$(this).parents('.btnFunction').nextAll().hide();
+							$(this).parents('.btnFunction').siblings('.tel').fadeIn();
+						}else if(i==1){
+							$(this).parents('.btnFunction').nextAll().hide();
+							$(this).parents('.btnFunction').siblings('.address').fadeIn();
+						}else if(i==2){
+							$(this).parents('.btnFunction').nextAll().hide();
+							$(this).parents('.btnFunction').siblings('.form').fadeIn();
+						}
+					})	
+				});
+				$(".codeForm").click(function(){
+					$(this).addClass("cur").siblings().removeClass("cur")
+				});
+				
+				/*页面轮播图*/
+
+				function scan($dl, elemIn, elemList,x) {
+					var len = $dl.length,
+						wid = $dl.outerWidth(true),
+						mWid = elemIn.width();
+		
+					var cts = Math.ceil(wid * len / mWid);
+					console.log("cts1====" + cts);
+			
+					elemList.css('width', mWid * (cts));
+					elemList.css('margin-left', 0);
+					 var x=0;
+					elemIn.siblings('.formRight').unbind();
+					elemIn.siblings('.formRight').click(function() {
+						if (x < cts - 1) {
+							x++;
+							//console.log("cts2====" + cts + ' ' + "x2====" + x);
+							homeScan(elemList, -mWid, x);
+						} else {
+							x = cts - 1;
+						}
+					}) //右箭头点击
+					elemIn.siblings('.formRight').mouseover(function() {
+						if (x < cts - 1) {
+							//console.log("cts2====" + cts + ' ' + "x2====" + x);
+							$(this).addClass('cur');
+						} else {
+							$(this).removeClass('cur');
+						}		
+			
+					}).mouseout(function() {
+						$(this).removeClass('cur');
+					}) //右箭头划过
+						
+					elemIn.siblings('.formLeft').unbind();
+					elemIn.siblings('.formLeft').click(function() {
+						if (x <= cts && x > 0) {
+							x--;
+							//console.log("cts3====" + cts + ' ' + "x3====" + x);
+							homeScan(elemList, mWid, -x);
+						} else {
+							x = 0
+						}
+					}) //左箭头点击
+			
+					elemIn.siblings('.formLeft').mouseover(function() {
+						if (x <= cts && x > 0) {
+							//console.log("cts3====" + cts + ' ' + "x3====" + x);
+							$(this).addClass('cur');
+						} else {
+							$(this).removeClass('cur');
+						}
+			
+					}).mouseout(function() {
+						$(this).removeClass('cur');
+					}) //左箭头划过
+				};
+			
+				function homeScan(elem, val, i) {
+					elem.animate({
+						'margin-left': val * i
+					}, 500)
+				};
+				
+				$('.upload button').click(function(){
+					$('.layer').show();
+				})
+			})
+		</script>
+		
+		<script src="http://open.web.meitu.com/sources/xiuxiu.js" type="text/javascript"></script>
+		
+		<script type="text/javascript">
+			window.onload=function(){
+				
+				xiuxiu.setLaunchVars("customMenu", ["edit"]);
+				xiuxiu.setLaunchVars("nav", "/edit");
+				xiuxiu.setLaunchVars("sizeTipVisible", 1); 
+				
+				xiuxiu.embedSWF("altContent",1,"100%","100%");
+				
+				
+				xiuxiu.setUploadType(2);
+				xiuxiu.setUploadDataFieldName("image");
+				
+				xiuxiu.setUploadURL("http://localhost:8080/app/uploadImg.do");//修改为您自己的上传接收图片程序
+				
+				xiuxiu.onBeforeUpload = function(data, id){
+					xiuxiu.setUploadArgs({filetype: data.type, type: "image", filename: data.name });
+				}
+				xiuxiu.onClose = function() {
+					$('.layer').hide();					
+				}
+				
+				
+				xiuxiu.onUploadResponse = function (data)
+				{
+					$("#mpic").attr("src",data+"?a="+Math.random());
+					xiuxiu.onClose();
+				}
+			}
+		</script>
+	</body>
+</html>

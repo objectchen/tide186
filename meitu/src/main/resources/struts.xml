@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.action.extension" value="do" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.enable.SlashesInActionNames" value="true"/>
+	<constant name="struts.multipart.maxSize" value="30000000" />
+	<constant name="struts.multipart.saveDir" value="/tmp"/>
+	
+	<package name="manager-default" extends="struts-default">     			
+       <!--全局跳转-->
+       <global-results>
+           <result name="error">/500.jsp</result>
+       </global-results>
+       <!-- 定义要捕获的异常 -->
+       <global-exception-mappings>
+           <exception-mapping  result="error" exception="java.lang.Exception" />
+       </global-exception-mappings>
+	</package>
+	
+	<package name="app" extends="struts-default" namespace="/app">
+		<action name="uploadImg" class="com.tide.meitu.action.UploadImgAction" method="uploadImg" ></action>
+	</package>
+	
+</struts>

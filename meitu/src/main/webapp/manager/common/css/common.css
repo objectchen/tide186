@@ -1,0 +1,72 @@
+@charset "utf-8";
+/*head样式*/
+.head{height: 77px;background: #262a32;border-bottom: 1px solid #797b7f;color: #fefdfd;}
+.headIn{width: 1000px;margin: 0 auto;position: relative;}
+h1{font-size: 30px;padding-top:20px;font-weight: normal;float: left;}
+.nav{width: 600px;height:77px;margin: 0 auto;}
+.nav li{width:124px;height:77px;margin:0 38px;float: left;text-align: center;line-height: 77px;}
+.nav li a{font-size: 18px;color: #FEFDFD;text-shadow: 1px 1px rgba(0,0,0,0.8);}
+.nav li.over{background: rgba(61,66,76,0.8);border-radius:4px ;}
+.nav li.cur{height:75px;border-bottom: 5px solid #3eb5c7;}
+.nav li.cur a{color: #3eb5c7;}
+.user{position: absolute;right: 0; top: 0; line-height: 77px;color: #c8c8c7;font-size: 14px;}
+.user i{padding-right: 12px;}
+.user a{color: #c8c8c7;font-size: 14px;}
+
+/*面包屑样式*/
+.guid{height: 73px; background: #f4f4f4;box-shadow:0 1px 6px rgba(0,0,0,0.2);margin-bottom: 25px;}
+.guidIn{width: 1000px;height: 73px; margin: 0 auto;position: relative;}
+.breadCrumbs{position: absolute;top: 0;left: 0;height: 73px;font-size: 14px;line-height: 73px;display:inline-block;padding-left: 10px;}
+.breadCrumbs span{padding-left: 10px;vertical-align: middle;}
+.breadCrumbs a{color: #6b6b69;}
+.breadCrumbs a:hover{text-decoration: underline;}
+.homeIcon{display:inline-block;width: 22px; height: 22px;background: url(../img/icons.png) 0 0 no-repeat;vertical-align: middle;cursor: pointer;}
+
+/*内容区域样式*/
+.con{width: 1000px; margin: 0 auto; min-height:680px;}
+
+/*footer样式*/
+.footer{height: 80px;background:#f4f4f4;text-align: center; line-height: 80px;color: #6B6B69;box-shadow:0 -1px 6px rgba(0,0,0,0.2);}
+.footer a{margin-left: 25px;}
+.footer i{margin-left: 18px;}
+
+/*弹框样式*/
+.layer{display:none;width:346px; height:190px;border: 1px solid #3eb3c5;border-radius: 6px;background: #fff;position:fixed; top:50%; left: 50%;margin: -95px 0 0 -173px;box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.4);} 
+.layer h2{height: 38px; font-size: 16px; line-height: 38px;font-weight:normal;border-bottom: 1px solid #3eb3c5;padding: 0 16px 0 34px;color: #3eb3c5;}
+.closeIcon{width: 15px; height: 15px;float: right;background: url(../img/icons.png) -65px -160px no-repeat;margin-top: 12px;cursor: pointer;}
+.closeIcon.cur{background: url(../img/icons.png) -65px -130px no-repeat;}
+.layer p{text-align: center;padding: 40px 0; font-size: 16px;}
+.layerBtns{text-align: center;}
+.layerBtns button{width: 80px; height: 30px;border: 1px solid #fff;border-radius: 4px;text-align: center;margin: 0 38px;}
+.layerBtns button.fir{border-color: #3eb3c5;color: #3eb3c5;}
+.layerBtns button.quxiao{border-color:#6b6b69;}
+
+/*引导页样式*/
+.layerGuide,.layerGuideBtn{width: 100%;height: 100%; position: fixed;background-color:rgba(0,0,0,0.7); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#70000000,endColorstr=#70000000);top:0; left: 0; z-index: 999;display: none;}
+.layerGuide .layerIn{width: 1000px;margin: 0 auto;position: relative;}
+.layerGuide .layerTop{height: 80px;position: relative;}
+.layerGuide .layerBottom{width:615px;height:500px;background: url(../../img/layerTxt.png) top center no-repeat;position: absolute;top:80px; right:10px;}
+.layerTop span{width: 110px; height: 55px; display: block;border: 2px solid #fff; border-radius:50% ;background: #383d47;text-align: center;line-height: 55px;font-size: 18px;color: #FEFDFD;text-shadow: 1px 1px rgba(0,0,0,0.8);position: absolute;top: 50%; left: 50%;margin: -28px 0 0 -55px;}
+
+input.focus{box-shadow: 0 0 5px 2px rgba(68,199,219,0.6);}
+textarea.focus{box-shadow: 0 0 5px 2px rgba(68,199,219,0.6);}
+
+/*icons*/
+.addIcon{display:inline-block;vertical-align:middle;margin-right:8px;width: 17px; height: 17px;background: url(../img/icons.png) -100px 0 no-repeat;}
+.curIcon{width: 19px; height: 19px;display: block; background: url(../img/icons.png) 0 -200px no-repeat;position: absolute;top: -10px; right: -10px;display: none;}
+.lightIcon2{display:block;width: 36px; height: 36px;background: url(../img/icons.png) 0px -150px no-repeat;margin:0 auto 16px;}
+.delIcon{width: 12px; height: 17px;display: inline-block;background: url(../img/icons.png) -65px -100px no-repeat;margin-left: 20px;vertical-align: -2px;cursor:pointer;}
+.musicIcon{display: inline-block;width: 66px; height: 36px; background: url(../img/icons.png) 0 -230px no-repeat;vertical-align: -15px;margin-left: 8px; display: none;}
+
+/*输入框下拉框样式*/
+.input60{width: 60px; height: 20px;padding:4px 4px;border:1px solid #d2d1d1;border-radius: 2px;}
+.input110{width: 111px; height: 20px;padding:4px 4px;border:1px solid #d2d1d1;border-radius: 2px;}
+.input200{width: 200px; height: 20px;padding:4px 4px;border:1px solid #d2d1d1;border-radius: 2px;}
+.sel100{width: 100px; height: 28px;padding-left:16px;border:1px solid #d2d1d1;border-radius: 2px;}
+.sel90{width: 85px; height: 28px;padding-left:5px;border:1px solid #d2d1d1;border-radius: 2px;margin-right: 20px;}
+.sel120{width: 120px; height: 28px;padding-left:16px;border:1px solid #d2d1d1;border-radius: 2px;}
+
+/*保存按钮*/
+.saveBtn {text-align: center;padding: 60px 0;}
+.saveBtn button {width: 140px;height: 40px;border: 1px solid #44c7db;border-radius: 6px;font-size: 18px;color: #44c7db;transition: all 400ms ease;-webkit-transition: all 400ms ease;-moz-transition: all 400ms ease;-o-transition: all 400ms ease;}
+.saveBtn button.over{box-shadow:0 0 6px 2px rgba(0,0,0,0.3);-webkit-box-shadow:0 0 6px 2px rgba(0,0,0,0.3);-moz-box-shadow:0 0 6px 2px rgba(0,0,0,0.3);-ms-box-shadow:0 0 6px 2px rgba(0,0,0,0.3);-o-box-shadow:0 0 6px 2px rgba(0,0,0,0.3);}

@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* reset */
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {margin: 0;padding: 0;}
+body,button, input, select, textarea { font:14px/1 "微软雅黑",Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;color: #6B6B69; }
+ul, ol,li { list-style:none; }
+q:before, q:after { content:''; }
+img { border:0;}
+button,input,select,textarea{outline: none;}
+header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details {display: block;}
+table {border-collapse: collapse;}
+caption, th {text-align: center;font-weight: normal;}
+html, body, fieldset, img, iframe, abbr,input,button {border: 0;}
+i, cite, em, var, address, dfn {font-style: normal;}
+[hidefocus], summary {outline: 0;}
+h1, h2, h3, h4, h5, h6, small,button, input, select, textarea {font-size: 100%;}
+sup, sub {font-size: 83%;}
+pre, code, kbd, samp {font-family: inherit;}
+q:before, q: after {content: none;}
+textarea {overflow: auto;resize: none;}
+label, summary {cursor: default;}
+a, button {cursor: pointer;background: none;}
+h1, em, strong, b {font-weight: bold;}
+h2, h3, h4, h5, h6{font-weight: normal;}
+del, ins, u, a, a:hover{text-decoration: none;}
+select{background: none;}
+body a{outline:none;blr:expression(this.onFocus=this.blur());}/*去掉A标签IE浏览器的虚线*/
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.clearfix{ zoom: 1; }
+select:hover{background: #ededed;}
+/* reset end */

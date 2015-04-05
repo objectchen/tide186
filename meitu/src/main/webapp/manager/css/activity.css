@@ -1,0 +1,84 @@
+@charset "utf-8";
+body{background: #f4f4f4;}
+.content{width: 970px;min-height: 450px;height: auto; margin: 0 auto 25px;background: #fff;border-radius:10px;padding: 30px 15px 30px;}
+/*左边展示区域*/
+.Exhibition{ float: left;width: 340px; height: 600px; border: 1px solid #D2D1D1; padding: 3px; background:url(../img/edit.jpg) no-repeat center; background-size: 340px;}
+.activityName{color: #fff;top:23px; font-size: 18px;height: 48px; background:#23282c ; line-height: 48px; text-align: center;margin: 20px 0 128px;}
+.transmitNum{height: 80px;padding-top:15px; margin-bottom: 85px;}
+.transmitNum p{text-align: center; font-size: 15px; color: white; line-height: 32px;}
+.transmitNum p i{color: #fb6121;}
+.transmitBtn{text-align: center; margin-bottom: 50px; color: #fff;}
+.transmitBtn span{display: inline-block;width: 96px; height: 33px; font-size: 15px;margin: 0 26px;position: relative;}
+.transmitBtn span i{position: absolute;position: absolute;left: 50%;top: 0;line-height: 33px;margin-left: -30px;}
+.transmitDes{height:100px; word-wrap:break-word;word-break:break-all;padding: 0 16px;color:#efb621;text-indent: 2em; font-size: 11px; line-height: 19px;overflow: auto;}
+
+/*右边编辑区域*/
+.Right{float: left; margin-left: 30px;}
+.EditArea{ border: 1px solid #44c7db; border-radius: 6px; width: 590px; position: relative;}
+.EditArea:after{content:" ";position: absolute;width: 20px;height: 30px;background: url(../common/img/icons.png) -180px -230px no-repeat;top: 18px;left: -20px;}
+.topTip{font-size: 13px; padding: 20px 40px 0;}
+.EditArea table{ margin: 15px 30px 0 15px;font-size: 13px;}
+.EditArea table tr th{ text-align: right; }
+.EditArea table tr th.top{vertical-align: top;padding-top: 15px;}
+.EditArea table tr td{ padding:10px 5px; }
+.EditArea table tr td.bottom{vertical-align: bottom;}
+.EditArea table tr td .btn{ margin-right: 140px;}
+.EditArea .PromptR{ color: red; padding-right: 5px;}
+.EditArea .PromptG{ font-size: 13px;padding-left: 10px;}
+.upload dt,.upload dd{float: left;}
+.upload{overflow: hidden;}
+.upload .pic{margin-right:25px;width: 78px; height: 70px; border: 1px solid #dcdcdc;text-align: center;padding-top: 8px;}
+.upload .uploadTip{line-height: 24px;  margin-bottom: 3px;}
+.upload button{width: 60px; height: 30px; margin-right: 30px; font-size: 13px; line-height: 30px; border: 1px solid #44c7db; border-radius:4px;color:#44c7db ;}
+.desTitle{vertical-align: top; padding-top: 18px;min-width: 104px;}
+.description span{padding: 0 12px; border-bottom: 1px solid #5a5a5a; line-height: 24px; }
+.desSetting li{margin-bottom: 10px;}
+.desConRight{width: 275px; height: 125px;padding: 10px;border: 1px solid #d2d1d1;border-radius:2px ;}
+#customWidget{top: 8px; left:10px;}
+.ruleDes{line-height: 25px;padding: 0 0 10px;}
+/*奖品设置页面*/
+.tabTitle{ overflow:hidden; height: 38px; line-height:36px; margin: 0 30px;width: 530px;}
+.tabTitle li{float: left;width: 263px;text-align: center; font-size: 16px;border: 1px solid #d2d1d1; cursor:pointer;}
+.tabTitle li.on{border: 1px solid #44c7db;}
+.tabTitle li:nth-child(1){border-bottom: 1px solid #fff;}
+.tabTitle li:nth-child(2){margin-left: -1px;border-left: 1px solid #44c7db;border-bottom: 1px solid #44c7db;}
+.tabCon{border: 1px solid #44c7db; border-top:none; margin: 0 30px; overflow: hidden;width: 527px;}
+.mm-actTip{margin: 10px 0;}
+
+.saveBtn{text-align: center;padding: 60px 0;}
+.saveBtn button{width: 140px; height: 40px;border: 1px solid #44c7db;border-radius:6px ;font-size: 18px;color: #44c7db;transition: all 400ms ease;-webkit-transition: all 400ms ease;-moz-transition: all 400ms ease;}
+.saveBtn button.over{box-shadow:0 0 6px 2px rgba(0,0,0,0.3);-webkit-box-shadow:0 0 6px 2px rgba(0,0,0,0.3);-moz-box-shadow:0 0 6px 2px rgba(0,0,0,0.3);-ms-box-shadow:0 0 6px 2px rgba(0,0,0,0.3);-o-box-shadow:0 0 6px 2px rgba(0,0,0,0.3);}
+
+/*活动推广模板选择*/
+.prizeTransmit{width: 50%;float: left;}
+.prizeTransmit .pic{float: left;width: 250px;}
+.prizeTransmit .picCon{float: left;}
+.picCon{float: right; border: 1px solid #44c7db; border-radius: 6px; width: 178px;height: 330px; position: relative;padding: 30px 15px 0;}
+.picCon:after{content:" ";position: absolute;width: 20px;height: 30px;background: url(../common/img/icons.png) -180px -230px no-repeat;top: 18px;left: -20px;}
+.picCon h2{font-size: 24px; color: #44c7db;text-align: center;margin-bottom: 20px;}
+.picCon p{line-height: 30px;}
+.unknow .pic{float: right;}
+.unknow .picCon{float: right;border: 1px solid #6b6b69; }
+.unknow .picCon:after{content:" ";position: absolute;width: 20px;height: 30px;background: url(../common/img/icons.png) -180px -200px no-repeat;top: 18px;left: -16px;}
+.unknow .picCon p{text-align: center;padding-top: 100px;margin-bottom: 32px;}
+.unknow .saveBtn button{border-color:#6b6b69;color: #6b6b69;}
+
+/*mulina2014/2/1*/
+.activityCode,.dateForm{height: 185px;padding:8px 20px 0;position: relative;}
+.codeliBox,.dateFormBox{width: 392px;height:172px;overflow: hidden;position: relative;padding-top: 10px;margin: 0 auto;}
+.codeList,.dateFormList{position:absolute;}
+.codeForm{width: 110px; height: 170px;background: #f4f4f4; border-radius: 4px;margin:0 10px;float: left;position: relative;}
+.codeForm.cur{border: 1px solid #44c7db;}
+.codeForm.cur .curIcon2{display: block;}
+.curIcon2{position: absolute;top:-9px; right: -9px;display: none;}
+.curIcon2 i{width: 18px; height: 18px; display: block; background: url(../common/img/icons.png) -40px 0 no-repeat;}
+.codeForm dt{text-align: center;padding: 12px 0;}
+.codeForm dd{text-align: center;}
+.scode{display: inline-block;width: 74px; height: 74px; border: 2px solid #fff;}
+.scode img{width: 100%; height: 100%;}
+.codeId{padding: 8px 0;}
+.formLeft{width: 7px; height: 12px; display: block;position:absolute;background: url(../common/img/icons.png) -65px -200px no-repeat; top:50% ; margin-top: -6px; left: 0px;}
+.formRight{width: 7px; height: 12px; display: block;position:absolute;background: url(../common/img/icons.png) -40px -200px no-repeat; top:50% ; margin-top: -6px; right: 0px;}
+
+.formLeft.cur{background-position: -180px -160px;}
+.formRight.cur{background-position: -160px -160px;}
