@@ -15,10 +15,13 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 public class SendTopic {
 
 	public static void main(String[] args) throws JMSException {
-		ConnectionFactory connectionFactory =new ActiveMQConnectionFactory(
-				ActiveMQConnection.DEFAULT_USER,
-				ActiveMQConnection.DEFAULT_PASSWORD,
-				"tcp://112.126.81.181:61616"
+//		ConnectionFactory connectionFactory =new ActiveMQConnectionFactory(
+//				ActiveMQConnection.DEFAULT_USER,
+//				ActiveMQConnection.DEFAULT_PASSWORD,
+//				"tcp://112.126.81.181:61616"
+//				);
+		ConnectionFactory connectionFactory=new ActiveMQConnectionFactory(
+				"failover:(tcp://112.126.81.181:61616)"
 				);
 		
 		Connection connection=connectionFactory.createConnection();

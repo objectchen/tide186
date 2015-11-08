@@ -14,10 +14,13 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 public class ReceiveQueue {
 
 	public static void main(String[] args) {
+//		ConnectionFactory connectionFactory=new ActiveMQConnectionFactory(
+//				ActiveMQConnection.DEFAULT_USER,
+//				ActiveMQConnection.DEFAULT_PASSWORD,
+//				"tcp://112.126.81.181:61616"
+//				);
 		ConnectionFactory connectionFactory=new ActiveMQConnectionFactory(
-				ActiveMQConnection.DEFAULT_USER,
-				ActiveMQConnection.DEFAULT_PASSWORD,
-				"tcp://112.126.81.181:61616"
+				"failover:(tcp://112.126.81.181:61616)"
 				);
 		Connection connection=null;
 		try {
