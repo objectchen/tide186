@@ -19,7 +19,7 @@ public class ListenerTopic {
 		ConnectionFactory connectionFactory = new ActiveMQConnectionFactory(
 				ActiveMQConnection.DEFAULT_USER,
 				ActiveMQConnection.DEFAULT_PASSWORD,
-				"tcp://192.168.1.200:61616"
+				"tcp://112.126.81.181:61616"
 				);
 		Connection connection = connectionFactory.createConnection();
 		connection.start();
@@ -36,7 +36,8 @@ public class ListenerTopic {
 				}catch(JMSException e){}
 			}
 		});
-		
+		//connection.close();
+		System.out.println("======ok");
 	}
 
 }

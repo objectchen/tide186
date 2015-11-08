@@ -18,7 +18,7 @@ public class SendTopic {
 		ConnectionFactory connectionFactory =new ActiveMQConnectionFactory(
 				ActiveMQConnection.DEFAULT_USER,
 				ActiveMQConnection.DEFAULT_PASSWORD,
-				"tcp://192.168.1.200:61616"
+				"tcp://112.126.81.181:61616"
 				);
 		
 		Connection connection=connectionFactory.createConnection();
@@ -32,11 +32,11 @@ public class SendTopic {
 		producer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);
 		
 		TextMessage message = session.createTextMessage();
-		message.setText("message_hello_001");
+		message.setText("message_hello_002");
 		
 		producer.send(message);
-		
-		
+		connection.close();
+		System.out.println("======ok");
 	}
 
 }

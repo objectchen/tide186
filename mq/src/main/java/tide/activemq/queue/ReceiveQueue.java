@@ -17,11 +17,11 @@ public class ReceiveQueue {
 		ConnectionFactory connectionFactory=new ActiveMQConnectionFactory(
 				ActiveMQConnection.DEFAULT_USER,
 				ActiveMQConnection.DEFAULT_PASSWORD,
-				"tcp://192.168.1.200:61616"
+				"tcp://112.126.81.181:61616"
 				);
-		
+		Connection connection=null;
 		try {
-			Connection connection=connectionFactory.createConnection();
+			connection=connectionFactory.createConnection();
 			connection.start();
 			
 			Session session=connection.createSession(Boolean.FALSE, Session.AUTO_ACKNOWLEDGE);
@@ -40,12 +40,12 @@ public class ReceiveQueue {
 					break;
 				}
 			}
-			
+			connection.close();
 		} catch (JMSException e) {
 			e.printStackTrace();
 		}
 		
-		
+		System.out.println("====ok");
 		
 		
 	}

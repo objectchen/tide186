@@ -23,7 +23,7 @@ public class SendQueue {
 		ConnectionFactory connectionFactory=new ActiveMQConnectionFactory(
 				ActiveMQConnection.DEFAULT_USER,
 				ActiveMQConnection.DEFAULT_PASSWORD,
-				"tcp://192.168.1.200:61616"
+				"tcp://112.126.81.181:61616"
 				);
 		Connection connection=connectionFactory.createConnection();
 		connection.start();
@@ -38,11 +38,13 @@ public class SendQueue {
 		MessageProducer producer=session.createProducer(destination);
 		producer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);
 		
-		ObjectMessage message = session.createObjectMessage("hello everyone");
+		ObjectMessage message = session.createObjectMessage("hello everyone2");
 		producer.send(message);
 		
 		session.commit();
 		
+		connection.close();
+		System.out.println("=====ok");
 	}
 
 }
